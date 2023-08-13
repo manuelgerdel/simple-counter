@@ -4,22 +4,33 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = (number) => {
+
+
+	setInterval(() => {
+
+	}
+
+	)
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		<>
+			<h1 className="text-center mt-5">Simple counter</h1>
+
+			<div className="container vh-100 d-flex align-items-center justify-content-center">
+
+				<div className="row display-3 col-5 border rounded">
+					<div className="col-2 "><i class="fa-regular fa-clock"></i></div>
+					<div className="col-2 ">{number.num5}</div>
+					<div className="col-2">{number.num4}</div>
+					<div className="col-2">{number.num3}</div>
+					<div className="col-2">{number.num2}</div>
+					<div className="col-2">{number.num1}</div>
+				</div>
+
+			</div>
+
+		</>
 	);
 };
 
